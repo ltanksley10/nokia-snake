@@ -1,14 +1,20 @@
+body {
+    background: black;
+}
+
 .grid {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
     border-style: solid;
+    background: white;
 }
 
 .grid div {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .snake {
@@ -17,4 +23,36 @@
 
 .apple {
     background-color: purple;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.scoreBoard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.gameBoard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.score {
+    margin-left: 10px;
+    color: white;
 }
